@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway-Administrative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="addTrainForm" action="index1.html">
+        <input type="text" placeholder="Train name" id="trainName">
+        <input type="text" placeholder="Train number" id="trainNumber">     
+        <div class="Arrival">
+            <label for="">Train arrival time</label>
+            <input type="time" id="trainArrival">
+        </div>
+        <div class="departure">
+            <label for="">Train departure time</label>
+            <input type="time" id="trainDeparture">
+        </div>
+        <input type="text" placeholder="Seat availability" id="seatAvailability">
+        <input type="text" placeholder="Source" id="Source">
+        <input type="text" placeholder="Destination" id="Destination">
+        <input type="number" placeholder="Price" id="price">
+        <button type="button" onclick="addTrain()">Add Train</button>
+    </form>   
+
+    <table id="trainTable" border="1" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Train name</th>
+                <th>Train number</th>
+                <th>Train Arrival</th>
+                <th>Train Departure</th>
+                <th>Source</th>
+                <th>Destinstion</th>
+                <th>Seat availability</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="trainTableBody"></tbody>
+    </table>
+
+    <form action="">
+        <button class="submit" onclick="updateJS()">
+            submit
+        </button>
+    </form>
+    <script src="script.js"></script>
+    <script src="asd.js"></script>
+</body>
+</html>
